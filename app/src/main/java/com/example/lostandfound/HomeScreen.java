@@ -11,8 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -62,6 +61,11 @@ public class HomeScreen extends AppCompatActivity {
 
     public void goToLost(View view){
         Intent intent = new Intent(HomeScreen.this,Lost.class);
+        startActivity(intent);
+    }
+
+    public void goToFound(View view){
+        Intent intent = new Intent(HomeScreen.this,Found.class);
         startActivity(intent);
     }
 
